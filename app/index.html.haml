@@ -1,0 +1,394 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+    %meta{:charset => "utf-8"}/
+    %title Huaming Rao
+    %meta{:content => "Huaming Rao", :name => "author"}/
+    %meta{:content => "Human Computer Interaction, Crowdsourcing, Rails Developer", :name => "keywords"}/
+    /[if lt IE 9]
+      <script src="js/html5shiv/html5shiv.js" type="text/javascript"></script>
+      <script src="js/html5shiv/html5shiv-printshiv.js" type="text/javascript"></script>
+      <style type="text/css">.site_nav { border-bottom: 1px solid #d4d4d4; }</style>
+    %link{:href => "styles/customs.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "styles/customs1.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "styles/ontello.css", :rel => "stylesheet"}/
+    %link{:href => "styles/bootstrap.css", :rel => "stylesheet"}/
+    %link{:href => "styles/bootstrap-responsive.css", :rel => "stylesheet"}/
+    %link{:href => "styles/progressbar.css", :rel => "stylesheet"}/
+    %link{:href => "styles/lightbox.css", :rel => "stylesheet"}/
+    %link{:href => "styles/styles.css", :rel => "stylesheet"}/
+    :css
+      [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+  %body
+    .wrapper
+      .container
+        .upbtnwrapp
+          .upbtn{:style => "display: block;"}
+            %span.icon-up-open-big
+        / NAVIGATION
+        %nav#site_nav.site_nav{:style => "position: fixed; margin-bottom: 55px; width: 940px; top: 0px;"}
+          %ul
+            %li
+              %a{:href => "#about_me"} About me
+            %li.active
+              %a{:href => "#my_expertise"} My Expertise
+            %li
+              %a{:href => "#experience"} Experience
+            %li
+              %a{:href => "#education"} Education
+            %li
+              %a{:href => "#portfolio"} Portfolio
+            %li
+              %a{:href => "#contact"} Contact
+        / /site_nav
+        #aftermenuspace{:style => "height: 55px;"}
+        / HEADER
+        %header.site_header.centerise.borderbtn
+          #logoline
+            %h1 Huaming Rao
+          %h2 PhD Student
+          %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Vestibulum varius risus ut purus dignissim sed sagittis libero rutrum.
+        / /site_header
+        / end HEADER
+        .container-fluid.page
+          / ABOUT ME
+          %section#about_me.row-fluid.about_me
+            %aside.span3.aside_el
+              %h2 About me
+              %h5
+                professional profile
+                %br/
+                and contact info
+            %article.span6.borderleft.par_el
+              %span.circle
+                %img{:alt => "", :src => "images/mypic.png", :style => "float:left"}/
+              %p Hello, I’m Lorem ipsum dolor sit amet, conseur adipiscing elit puella magna est.
+              %p Etiam sem eros, interdum at rutrum et, hendrerit id nisi. Etiam iaculis lorem eget arcu gravida lacinia. Fringilla justo ullamcorper ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Raesent sem elit, volutpat id vulputate faucibus, fringilla vel massa. Proin nec mi a mi tincidunt elementum sed vel ipsum.
+            .span3.cont_info
+              .soc
+                %ul
+                  %li
+                    %a{:href => ""}
+                      %img{:alt => "", :src => "images/facebook.png"}/
+                  %li
+                    %a{:href => ""}
+                      %img{:alt => "", :src => "images/twitter.png"}/
+                  %li
+                    %a{:href => ""}
+                      %img{:alt => "", :src => "images/linkedin.png"}/
+                  %li
+                    %a{:href => ""}
+                      %img{:alt => "", :src => "images/google-plus.png"}/
+                  %li
+                    %a{:href => ""}
+                      %img{:alt => "", :src => "images/rss.png"}/
+              .info
+                %ul
+                  %li
+                    %span.icon-mobile
+                    %a +387 51 000 111
+                  %li
+                    %span.icon-location
+                    %a Braće Jugovića 21
+                  %li
+                    %span.icon-mail
+                    %a mail@mail.com
+            / /cont_info
+          / /about_me
+          / end ABOUT ME
+          / MY EXPERTISE
+          %section#my_expertise.row-fluid.my_expertise
+            %aside.span3.aside_el
+              %h2 My Expertise
+              %h5
+                skills that I’m
+                %br/
+                proud of
+            %article.span4.borderleft.par_el
+              %p Fringilla justo ullamcorper ac. Class aptent taciti sociosqu ad litora torque per conubia nostra, per inceptos himenaeos magna puella molto est.
+              %p Raesent sem elit, volutpat id vulputate faucibus, fringilla vel mass. Proin nec mi a mi tincidunt elementu sed vel ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              %p I love doing what I do.
+            .span5.skill_level
+              %h4 UX Design
+              .progressbar.percent_70
+                .progressbar-inner
+              %h4 HTML5 with CSS3
+              .progressbar.percent_100
+                .progressbar-inner
+              %h4 PHP&amp;MySQL
+              .progressbar.percent_30
+                .progressbar-inner
+              %h4 Javascript
+              .progressbar.percent_90
+                .progressbar-inner
+            / /skill_level
+          / /my_expertise
+          / end MY EXPERTISE
+          / EXPERIENCE
+          %section#experience.row-fluid.experience
+            %aside.span3.aside_el
+              %h2 Experience
+              %h5 where I worked
+            .span9
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacing
+                  %span.period 2012 - Present
+                  .bigspacing
+                    %header
+                      %h2 Pixel Dizajn Studio
+                      %h3 Designer
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
+                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacing
+                  %span.period 2008 - 2012
+                  .bigspacing
+                    %header
+                      %h2 College Art Studio
+                      %h3 UX Designer
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
+                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacingbottom
+                  %span.period 2007 - 2008
+                  .bigspacing
+                    %header
+                      %h2 Freelancer
+                      %h3 Web designer and developer
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
+                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+          / /experience
+          / end EXPERIENCE
+          / EDUCATION
+          %section#education.row-fluid.education
+            %aside.span3.aside_el
+              %h2 Education
+              %h5
+                my college and
+                %br/
+                high school
+            .span9
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacing
+                  %span.period 2003 - 2007
+                  .bigspacing
+                    %header
+                      %h2 Stanford University
+                      %h3 Computer science
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
+                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacingbottom
+                  %span.period 1992 - 2003
+                  .bigspacing
+                    %header
+                      %h2 Head-Royce School
+                      %h3 Oakland, CA
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
+                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+          / /education
+          / end EDUCATION
+          / PORTFOLIO
+          %section#portfolio.row-fluid.portfolio
+            %aside.span3.aside_el
+              %h2 Portfolio
+              %h5
+                some of my
+                %br/
+                best work
+            .span9.borderleft
+              .galleryContainer
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/1.jpg"}
+                    %img{:alt => "", :src => "images/gallery_1.jpg"}/
+                  %h3 Business Card
+                  %p Graphic Design
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/2.jpg"}
+                    %img{:alt => "", :src => "images/gallery_2.jpg"}/
+                  %h3 Business Card Back
+                  %p Graphic Design
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/3.jpg"}
+                    %img{:alt => "", :src => "images/gallery_3.jpg"}/
+                  %h3 CD case and promo
+                  %p Print Design
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/1.jpg"}
+                    %img{:alt => "", :src => "images/gallery_1.jpg"}/
+                  %h3 Leaflet cards
+                  %p Graphic Design
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/2.jpg"}
+                    %img{:alt => "", :src => "images/gallery_2.jpg"}/
+                  %h3 Business Design
+                  %p Graphic Design
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/3.jpg"}
+                    %img{:alt => "", :src => "images/gallery_3.jpg"}/
+                  %h3 eBook cover
+                  %p Graphic Design
+          / /portfolio
+          / end PORTFOLIO
+        / /page
+        %footer.row-fluid.siteFooter
+          #contact
+            %aside.span3.aside_el
+              %h2 Contact us
+              %h5
+                we reply in less
+                %br/
+                than 24 hours
+            .span9.borderleft
+              %form.comment_form{"data-validate" => "parsley"}
+                %fieldset
+                  %input#form_name.parsley-validated{"data-required" => "true", "data-trigger" => "focusin focusout", :placeholder => "Name", :type => "text"}/
+                  %input#form_email.parsley-validated{"data-required" => "true", "data-trigger" => "focusin focusout", "data-type" => "email", :placeholder => "Email Address", :type => "text"}/
+                  %textarea#form_message.parsley-validated{"data-required" => "true", "data-trigger" => "focusin focusout", :placeholder => "Message", :rows => "8"}
+                  .send-button.pull-right
+                    %a SEND THE MESSAGE
+      / /container
+    / /wrapper
+    %script{:src => "scripts/jquery.min.js", :type => "text/javascript"}
+    %script{:src => "scripts/parsley.min.js"}
+    %script{:src => "scripts/lightbox.js"}
+    %script{:src => "scripts/retina.js"}
+    :javascript
+      $(document).ready(function(){
+      	$('.comment_form input, .comment_form textarea').focus(function () { 
+      		$(this).css({"-webkit-box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "-moz-box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "border": "1px solid #999"}); 
+      	});
+      	$('.comment_form input, .comment_form textarea').blur(function () { 
+      		$(this).css({"-webkit-box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "-moz-box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "border": "1px solid #e0e0e0"}); 
+      	});
+      });
+      $(".send-button").click(function () {
+      	if ( $( '.comment_form' ).parsley('validate') ) {
+      		var form_name = $("#form_name").val(); 
+      		var form_email = $("#form_email").val(); 
+      		var form_message = $("#form_message").val(); 
+      		$.post("php/mailer.php", { name : form_name , email : form_email , message : form_message }, function(results){
+      			alert(results);
+      		}); 
+      	} 
+      });
+      $(window).on('load resize', function () {
+      	current_width = $(window).width();
+      	if ( current_width < 767 ) {
+      		$("br").hide();
+      	} else {
+      		$("br").show();
+      	}
+      });
+      
+      // Cache selectors
+      if ( $(window).width() > 940 ) {
+      	var lastId,
+      		topMenu = $("#site_nav")
+      		topMenuHeight = topMenu.outerHeight()+40,
+      		// All list items
+      		menuItems = topMenu.find("a"),
+      		// Anchors corresponding to menu items
+      		scrollItems = menuItems.map(function(){
+      		  var item = $($(this).attr("href"));
+      		  if (item.length) { return item; }
+      		});
+      } else {
+      	var lastId,
+      		topMenu = $("#site_nav")
+      		topMenuHeight = topMenu.outerHeight()-140,
+      		// All list items
+      		menuItems = topMenu.find("a"),
+      		// Anchors corresponding to menu items
+      		scrollItems = menuItems.map(function(){
+      		  var item = $($(this).attr("href"));
+      		  if (item.length) { return item; }
+      		});
+      
+      }
+      
+      
+      // Bind click handler to menu items
+      // so we can get a fancy scroll animation
+      menuItems.click(function(e){
+        var href = $(this).attr("href"),
+      	  offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+        $('html, body').stop().animate({ 
+      	  scrollTop: offsetTop
+        }, 300);
+        e.preventDefault();
+      });
+
+      // Bind to scroll
+      $(window).scroll(function(){
+         // Get container scroll position
+         var fromTop = $(this).scrollTop()+topMenuHeight;
+         
+         // Get id of current scroll item
+         var cur = scrollItems.map(function(){
+      	 if ($(this).offset().top < fromTop)
+      	   return this;
+         });
+         // Get the id of the current element
+         cur = cur[cur.length-1];
+         var id = cur && cur.length ? cur[0].id : "";
+         
+         if (lastId !== id) {
+      	   lastId = id;
+      	   // Set/remove active class
+      	   menuItems
+      		 .parent().removeClass("active")
+      		 .end().filter("[href=#"+id+"]").parent().addClass("active");
+         }                   
+      });// $('.scrollup').fadeIn();
+      
+      $(window).scroll(function(){
+      	var pos = $(window).scrollTop();
+      	if (pos > 55 && current_width > 940) {
+      		$(".site_nav").css({
+      				"position": "fixed",
+      				"top":    "0",
+      				"width":    "940px",
+      				"margin-bottom":    "55px",
+      		});
+      		$("#aftermenuspace").css({
+      				"height":    "55px",
+      		});
+      	} else {
+      		$(".site_nav").css({
+      				"position": "relative",
+      				"margin-bottom":    "0",
+      				"width":    "100%",
+      		});
+      		$("#aftermenuspace").css({
+      				"height":    "0",
+      		});
+      	}
+      	if ( pos > 600 ) { $('.upbtn').fadeIn();} else { $('.upbtn').fadeOut(); }
+      });
+      
+      $('.upbtn').click(function(){
+      	$("html, body").animate({ scrollTop: 0 }, 600);
+      	return false;
+      });
+    -##lightboxOverlay{:style => "display: none;"}
+    -##lightbox{:style => "display: none;"}
+      -#.lb-outerContainer
+        -#.lb-container
+          -#%img.lb-image/
+          -#.lb-nav
+            -#%a.lb-prev
+            -#%a.lb-next
+          -#.lb-loader
+            -#%a.lb-cancel
+              -#%img{:src => "images/loading.gif"}/
+      -#.lb-dataContainer
+        -#.lb-data
+          -#.lb-details
+            -#%span.lb-caption
+            -#%span.lb-number
+          -#.lb-closeContainer
+            -#%a.lb-close
+              -#%img{:src => "images/close.png"}/
