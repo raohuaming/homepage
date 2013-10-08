@@ -33,6 +33,8 @@
             %li
               %a{:href => "#about_me"} About me
             %li
+              %a{:href => "#news"} News
+            %li
               %a{:href => "#my_expertise"} My Expertise
             %li
               %a{:href => "#publications"} Publications
@@ -41,7 +43,7 @@
             %li
               %a{:href => "#education"} Education
             %li
-              %a{:href => "#portfolio"} Portfolio
+              %a{:href => "#portfolio"} Photo
             %li
               %a{:href => "#contact"} Contact
         / /site_nav
@@ -51,7 +53,8 @@
           #logoline
             %h1 Huaming Rao
           %h2 PhD Student
-          %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Vestibulum varius risus ut purus dignissim sed sagittis libero rutrum.
+          -#%h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Vestibulum varius risus ut purus dignissim sed sagittis libero rutrum.
+          %img{:src => "images/my_keywords.png", :width => "60%"}
         / /site_header
         / end HEADER
         .container-fluid.page
@@ -67,7 +70,10 @@
               %span.circle
                 %img{:alt => "", :src => "images/mypic.png", :style => "float:left"}/
               %p 
-                I’m a PH.D. candidate from Nanjing University of Science & Technology (NUST), Nanjing, P.R China, supervised by Prof. Chuancai Liu. major on artificial intelligence & pattern recognition, and now I'm studying in the University of Illinois at Urbana-Champaign (UIUC)as a visiting student, supervised by
+                I’m a PH.D. candidate from Nanjing University of Science & Technology (NUST), Nanjing, P.R China, supervised by Prof. Chuancai Liu. major on artificial intelligence & pattern recognition, and now I'm studying in the University of Illinois at Urbana-Champaign (UIUC) as a visiting student working in the 
+                %a(href="http://cascade.cs.illinois.edu" target="_blank")
+                  CASCAD Lab
+                , supervised by
                 %a{:href => "http://www.cs.illinois.edu/homes/wfu/", :target => "_blank"}
                   Prof. Wai-Tat Fu.
               %p
@@ -112,6 +118,28 @@
             / /cont_info
           / /about_me
           / end ABOUT ME
+          / MY news
+          %section#news.row-fluid.news
+            %aside.span3.aside_el
+              %h2 News
+              %h5
+                What's happening
+            %article.span9.borderleft.par_el
+              %ul
+                %li
+                  %p 
+                    I wrote a blog about our work accepted by HCOMP13 on the site CrowdResearch:
+                    %a(href="http://crowdresearch.org/blog/?p=8186" target="_blank")
+                      What Will Others Choose? How a Majority Vote Reward Scheme Can Improve Human Computation in a Spatial Location Identification Task
+                %li
+                  %p I just finished my trip to Yellowstone.
+                  %blockquote
+                    %p “Moved into a state of awe at the majesty of the Creator’s touch.”
+                    %small
+                      %cite(title="Vignette: The Yellowstone Experience") Vignette: The Yellowstone Experience
+
+          / /news
+          / end MY NEWS
           / MY EXPERTISE
           %section#my_expertise.row-fluid.my_expertise
             %aside.span3.aside_el
@@ -121,21 +149,21 @@
                 %br/
                 proud of
             %article.span4.borderleft.par_el
-              %p Fringilla justo ullamcorper ac. Class aptent taciti sociosqu ad litora torque per conubia nostra, per inceptos himenaeos magna puella molto est.
-              %p Raesent sem elit, volutpat id vulputate faucibus, fringilla vel mass. Proin nec mi a mi tincidunt elementu sed vel ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              %p I love doing what I do.
+              %p Technical skills include programming C++, Java, C#, especially strong at web development with Ruby on Rails, AngularJs, HTML5, MySQL, etc., as well as rich experience of project management.
+              %p Research skills in statistics and data analysis with the tools of Matlab and R, SPSS.
+              %p Most importantly, I love doing what I do.
             .span5.skill_level
-              %h4 UX Design
+              %h4 C++, Java, C#
               .progressbar.percent_70
                 .progressbar-inner
-              %h4 HTML5 with CSS3
-              .progressbar.percent_100
-                .progressbar-inner
-              %h4 PHP&amp;MySQL
-              .progressbar.percent_30
-                .progressbar-inner
-              %h4 Javascript
+              %h4 Rails & MySQL
               .progressbar.percent_90
+                .progressbar-inner
+              %h4 Javascript(JQuery, AngularJs) & HTML5
+              .progressbar.percent_60
+                .progressbar-inner
+              %h4 Data Analysis(R, Matlab)
+              .progressbar.percent_80
                 .progressbar-inner
             / /skill_level
           / /my_expertise
@@ -170,7 +198,7 @@
           / projects
           %section#projects.row-fluid.projects
             %aside.span3.aside_el
-              %h2 projects
+              %h2 Projects
               %h5 where I worked
             .span9
               .row-fluid
@@ -216,79 +244,82 @@
                   %span.period 2012 - Present
                   .bigspacing
                     %header
-                      %h2 University of Illinois at Urbana-Champaign, USA
-                      %h3 Visiting Scholar, Human Computer Interaction
-                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
-                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+                      %h3 University of Illinois at Urbana-Champaign, USA
+                      %p Visiting Scholar, Human Computer Interaction
               .row-fluid
                 %article.span12.borderleft.par_el.in_spacingbottom
                   %span.period 2009 - Present
                   .bigspacing
                     %header
-                      %h2 Nanjing University of Science & Technology, P.R. China
-                      %h3 Ph.D. candidate, Computer Science
-                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
-                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+                      %h3 Nanjing University of Science & Technology, P.R. China
+                      %p Ph.D. candidate, Computer Science
               .row-fluid
                 %article.span12.borderleft.par_el.in_spacingbottom
                   %span.period 2008.8 - 2008.12
                   .bigspacing
                     %header
-                      %h2 Ajou University, South Korea
-                      %h3 Exchange Student, Computer Science
-                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
-                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+                      %h3 Ajou University, South Korea
+                      %p Exchange Student, Computer Science
               .row-fluid
                 %article.span12.borderleft.par_el.in_spacingbottom
                   %span.period 2005 - 2009
                   .bigspacing
                     %header
-                      %h2 Nanjing University of Science & Technology, P.R. China
-                      %h3 Bachelor，Computer Science
-                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
-                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+                      %h3 Nanjing University of Science & Technology, P.R. China
+                      %p Bachelor，Computer Science
           / /education
           / end EDUCATION
           / PORTFOLIO
           %section#portfolio.row-fluid.portfolio
             %aside.span3.aside_el
-              %h2 Portfolio
+              %h2 Photo
               %h5
-                some of my
-                %br/
-                best work
+                about my life
             .span9.borderleft
               .galleryContainer
                 .galleryItem
-                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/1.jpg"}
-                    %img{:alt => "", :src => "images/gallery_1.jpg"}/
-                  %h3 Business Card
-                  %p Graphic Design
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/Yellowstone_prismatic_lake.JPG"}
+                    %img{:alt => "", :src => "images/my_life/Yellowstone_prismatic_lake.JPG"}/
+                  %h3 Yellowstone
+                  %p Prismatic Lake
                 .galleryItem
-                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/2.jpg"}
-                    %img{:alt => "", :src => "images/gallery_2.jpg"}/
-                  %h3 Business Card Back
-                  %p Graphic Design
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/Yellowstone_old_faithful.JPG"}
+                    %img{:alt => "", :src => "images/my_life/Yellowstone_old_faithful.JPG"}/
+                  %h3 Yellowstone
+                  %p Old Faithful
                 .galleryItem
-                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/3.jpg"}
-                    %img{:alt => "", :src => "images/gallery_3.jpg"}/
-                  %h3 CD case and promo
-                  %p Print Design
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/Yellowstone_wolves.JPG"}
+                    %img{:alt => "", :src => "images/my_life/Yellowstone_wolves.JPG"}/
+                  %h3 Yellowstone
+                  %p Two wolves just ate a deer
                 .galleryItem
-                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/1.jpg"}
-                    %img{:alt => "", :src => "images/gallery_1.jpg"}/
-                  %h3 Leaflet cards
-                  %p Graphic Design
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/Yellowstone1.JPG"}
+                    %img{:alt => "", :src => "images/my_life/Yellowstone1.JPG"}/
+                  %h3 Yellowstone
                 .galleryItem
-                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/2.jpg"}
-                    %img{:alt => "", :src => "images/gallery_2.jpg"}/
-                  %h3 Business Design
-                  %p Graphic Design
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/Yellowstone2.JPG"}
+                    %img{:alt => "", :src => "images/my_life/Yellowstone2.JPG"}/
+                  %h3 Yellowstone
+                  %p Buffalo: Mother
                 .galleryItem
-                  %a{:class => "lightbox['portfolio']", :href => "http://pixeldizajn.com/PerfectCV/img/3.jpg"}
-                    %img{:alt => "", :src => "images/gallery_3.jpg"}/
-                  %h3 eBook cover
-                  %p Graphic Design
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/Yellowstone3.JPG"}
+                    %img{:alt => "", :src => "images/my_life/Yellowstone3.JPG"}/
+                  %h3 Yellowstone
+                  %p Elk
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/bad_lands.JPG"}
+                    %img{:alt => "", :src => "images/my_life/bad_lands.JPG"}/
+                  %h3 Bad Lands
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/chicago_wills_tower.JPG"}
+                    %img{:alt => "", :src => "images/my_life/chicago_wills_tower.JPG"}/
+                  %h3 Chicago
+                  %p Wills Tower
+                .galleryItem
+                  %a{:class => "lightbox['portfolio']", :href => "images/my_life/Disney_land1.JPG"}
+                    %img{:alt => "", :src => "images/my_life/Disney_land1.JPG"}/
+                  %h3 California
+                  %p Disney Land
           / /portfolio
           / end PORTFOLIO
         / /page
@@ -315,6 +346,16 @@
     %script{:src => "scripts/lightbox.js"}
     %script{:src => "scripts/retina.js"}
     :javascript
+      // Google Analytics: change UA-XXXXX-X to be your site's ID
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+
+
       $(document).ready(function(){
       	$('.comment_form input, .comment_form textarea').focus(function () { 
       		$(this).css({"-webkit-box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "-moz-box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "box-shadow": "0px 0px 0px rgba(0, 0, 0, 0)", "border": "1px solid #999"}); 
@@ -432,22 +473,3 @@
       	$("html, body").animate({ scrollTop: 0 }, 600);
       	return false;
       });
-    -##lightboxOverlay{:style => "display: none;"}
-    -##lightbox{:style => "display: none;"}
-      -#.lb-outerContainer
-        -#.lb-container
-          -#%img.lb-image/
-          -#.lb-nav
-            -#%a.lb-prev
-            -#%a.lb-next
-          -#.lb-loader
-            -#%a.lb-cancel
-              -#%img{:src => "images/loading.gif"}/
-      -#.lb-dataContainer
-        -#.lb-data
-          -#.lb-details
-            -#%span.lb-caption
-            -#%span.lb-number
-          -#.lb-closeContainer
-            -#%a.lb-close
-              -#%img{:src => "images/close.png"}/
