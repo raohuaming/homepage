@@ -335,13 +335,13 @@ body {
 }
 
 /*-----------------------------*\
-	$EXPERIENCE
+	$projects
 \*-----------------------------*/
 
-.experience {
+.projects {
 	margin-top: 60px;
 }
-.experience p, .education p {
+.projects p, .education p {
 	color: #c0c0c0;
 }
 
@@ -637,7 +637,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	.my_expertise {
 		margin-top: 35px;
 	}
-	.experience {
+	.projects {
 		margin-top: 35px;
 	}
 	.education {
@@ -698,7 +698,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	.my_expertise {
 		margin-top: 25px;
 	}
-	.experience, .education, .portfolio {
+	.projects, .education, .portfolio {
 		margin-top: 20px;
 	}	
 	.par_el header h2 {

@@ -32,10 +32,12 @@
           %ul
             %li
               %a{:href => "#about_me"} About me
-            %li.active
+            %li
               %a{:href => "#my_expertise"} My Expertise
             %li
-              %a{:href => "#experience"} Experience
+              %a{:href => "#publications"} Publications
+            %li
+              %a{:href => "#projects"} Projects
             %li
               %a{:href => "#education"} Education
             %li
@@ -64,37 +66,49 @@
             %article.span6.borderleft.par_el
               %span.circle
                 %img{:alt => "", :src => "images/mypic.png", :style => "float:left"}/
-              %p Hello, I’m Lorem ipsum dolor sit amet, conseur adipiscing elit puella magna est.
-              %p Etiam sem eros, interdum at rutrum et, hendrerit id nisi. Etiam iaculis lorem eget arcu gravida lacinia. Fringilla justo ullamcorper ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Raesent sem elit, volutpat id vulputate faucibus, fringilla vel massa. Proin nec mi a mi tincidunt elementum sed vel ipsum.
+              %p 
+                I’m a PH.D. candidate from Nanjing University of Science & Technology (NUST), Nanjing, P.R China, supervised by Prof. Chuancai Liu. major on artificial intelligence & pattern recognition, and now I'm studying in the University of Illinois at Urbana-Champaign (UIUC)as a visiting student, supervised by
+                %a{:href => "http://www.cs.illinois.edu/homes/wfu/", :target => "_blank"}
+                  Prof. Wai-Tat Fu.
+              %p
+                My research interests broadly lie in the fields of machine learning, crowdsourcing and social computing. I'm also an experienced web developer as a fan of Ruby on Rails, AngularJs, etc. 
+              %p
+                BTW, I'm enthusiastic about testing.
             .span3.cont_info
               .soc
                 %ul
                   %li
-                    %a{:href => ""}
-                      %img{:alt => "", :src => "images/facebook.png"}/
-                  %li
-                    %a{:href => ""}
-                      %img{:alt => "", :src => "images/twitter.png"}/
-                  %li
-                    %a{:href => ""}
+                    %a{:href => "http://www.linkedin.com/pub/huaming-rao/82/307/7b5", :target => "_blank"}
                       %img{:alt => "", :src => "images/linkedin.png"}/
                   %li
-                    %a{:href => ""}
-                      %img{:alt => "", :src => "images/google-plus.png"}/
+                    %a{:href => "https://github.com/raohuaming", :target => "_blank"}
+                      %img{:alt => "", :src => "images/github.png"}/
                   %li
-                    %a{:href => ""}
-                      %img{:alt => "", :src => "images/rss.png"}/
+                    %a{:href => "http://www.facebook.com/huaming.rao", :target => "_blank"}
+                      %img{:alt => "", :src => "images/facebook.png"}/
+                  %li
+                    %a{:href => "http://www.twitter.com/raohuaming", :target => "_blank"}
+                      %img{:alt => "", :src => "images/twitter.png"}/
+                  -#%li
+                    -#%a{:href => ""}
+                      -#%img{:alt => "", :src => "images/google-plus.png"}/
               .info
                 %ul
+                  -#%li
+                    -#%span.icon-mobile
+                    -#%a +387 51 000 111
+                  -#%li
+                    -#%span.icon-location
+                    -#%a
+                      -#3314 Siebel Center
+                      -#%br
+                      -#201 N. Goodwin Ave.
+                      -#%br
+                      -#Urbana, Illinois 61801
                   %li
-                    %span.icon-mobile
-                    %a +387 51 000 111
-                  %li
-                    %span.icon-location
-                    %a Braće Jugovića 21
-                  %li
-                    %span.icon-mail
-                    %a mail@mail.com
+                    -#%span.icon-mail
+                    -#%a
+                    %img{:src => "images/email.png"}
             / /cont_info
           / /about_me
           / end ABOUT ME
@@ -126,10 +140,37 @@
             / /skill_level
           / /my_expertise
           / end MY EXPERTISE
-          / EXPERIENCE
-          %section#experience.row-fluid.experience
+          / PUBLICATIONS
+          %section#publications.row-fluid.publications
             %aside.span3.aside_el
-              %h2 Experience
+              %h2 Publications
+              %h5
+                Papers I've published
+            .span9
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacing
+                  %span.period  2013 - Present
+                  .bigspacing
+                    %ul
+                      %li
+                        %p Rao, H., Huang, S. W. & Fu, W.-T.. What Will Others Choose? How a Majority Vote Reward Scheme Can Improve Human Computation in a Spatial Location Identification Task. Accepted by The first AAAI conference on Human Computation and Crowdsourcing (HCOMP-2013), Palm Springs, California.
+                      %li
+                        %p Rao, H., & Fu, W.-T.. Combining Schematic and Augmented Reality Representations in a Remote Spatial Assistance System. In Proceedings of IEEE ISMAR 2013 Workshop on Collaboration in Merging Realities, Adelaide, SA, Australia
+                      %li
+                        %p Rao, H., & Fu, W.-T.. A General Framework for a Collaborative Mobile Indoor Navigation Assistance System. In Proceedings of the ACM International Conference on Intelligent User Interfaces (IUI), Santa Monica, CA.
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacing
+                  %span.period  2011
+                  .bigspacing
+                    %ul
+                      %li
+                        %p Cairong Zhao, Chuancai Liu, Zhihui Lai, Huaming Rao, “Sparse embedding visual attention system combined with edge information”, AEU - International Journal of Electronics and Communications 65, no. 12 (2011): 1061-1068.
+          / /publications
+          / end PUBLICATIONS
+          / projects
+          %section#projects.row-fluid.projects
+            %aside.span3.aside_el
+              %h2 projects
               %h5 where I worked
             .span9
               .row-fluid
@@ -159,33 +200,51 @@
                       %h3 Web designer and developer
                     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
                     %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
-          / /experience
-          / end EXPERIENCE
+          / /projects
+          / end projects
           / EDUCATION
           %section#education.row-fluid.education
             %aside.span3.aside_el
               %h2 Education
               %h5
                 my college and
-                %br/
-                high school
+                %br
+                my educating experience
             .span9
               .row-fluid
                 %article.span12.borderleft.par_el.in_spacing
-                  %span.period 2003 - 2007
+                  %span.period 2012 - Present
                   .bigspacing
                     %header
-                      %h2 Stanford University
-                      %h3 Computer science
+                      %h2 University of Illinois at Urbana-Champaign, USA
+                      %h3 Visiting Scholar, Human Computer Interaction
                     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
                     %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
               .row-fluid
                 %article.span12.borderleft.par_el.in_spacingbottom
-                  %span.period 1992 - 2003
+                  %span.period 2009 - Present
                   .bigspacing
                     %header
-                      %h2 Head-Royce School
-                      %h3 Oakland, CA
+                      %h2 Nanjing University of Science & Technology, P.R. China
+                      %h3 Ph.D. candidate, Computer Science
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
+                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacingbottom
+                  %span.period 2008.8 - 2008.12
+                  .bigspacing
+                    %header
+                      %h2 Ajou University, South Korea
+                      %h3 Exchange Student, Computer Science
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
+                    %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
+              .row-fluid
+                %article.span12.borderleft.par_el.in_spacingbottom
+                  %span.period 2005 - 2009
+                  .bigspacing
+                    %header
+                      %h2 Nanjing University of Science & Technology, P.R. China
+                      %h3 Bachelor，Computer Science
                     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.
                     %p Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.
           / /education
