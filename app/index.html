@@ -52,7 +52,7 @@
               <a href='#portfolio'>Photo</a>
             </li>
             <li>
-              <a href='#contact'>Contact</a>
+              <a href='#disqus_thread'>Contact</a>
             </li>
           </ul>
         </nav>
@@ -104,7 +104,7 @@
               <div class='soc'>
                 <ul>
                   <li>
-                    <a href='http://www.linkedin.com/pub/huaming-rao/82/307/7b5' target='_blank'>
+                    <a href='www.linkedin.com/in/huamingrao/' target='_blank'>
                       <img alt='' src='images/linkedin.png'>
                     </a>
                   </li>
@@ -436,28 +436,29 @@
         </div>
         <!-- /page -->
         <footer class='row-fluid siteFooter'>
-          <div id='contact'>
-            <aside class='span3 aside_el'>
-              <h2>Contact us</h2>
-              <h5>
-                we reply in less
-                <br>
-                than 24 hours
-              </h5>
-            </aside>
-            <div class='span9 borderleft'>
-              <form class='comment_form' data-validate='parsley'>
-                <fieldset>
-                  <input class='parsley-validated' data-required='true' data-trigger='focusin focusout' id='form_name' placeholder='Name' type='text'>
-                  <input class='parsley-validated' data-required='true' data-trigger='focusin focusout' data-type='email' id='form_email' placeholder='Email Address' type='text'>
-                  <textarea class='parsley-validated' data-required='true' data-trigger='focusin focusout' id='form_message' placeholder='Message' rows='8'></textarea>
-                  <div class='send-button pull-right'>
-                    <a>SEND THE MESSAGE</a>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
-          </div>
+          <div id='disqus_thread'></div>
+          <script>
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'huaming'; // required: replace example with your forum shortname
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>
+            Please enable JavaScript to view the
+            <a href='http://disqus.com/?ref_noscript'>
+              comments powered by Disqus.
+            </a>
+          </noscript>
+          <a class='dsq-brlink' href='http://disqus.com'>
+            comments powered by
+            <span class='logo-disqus'>
+              Disqus
+            </span>
+          </a>
         </footer>
       </div>
       <!-- /container -->
@@ -476,7 +477,7 @@
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       
-      ga('create', 'UA-XXXXX-X');
+      ga('create', 'UA-38951229-2', 'illinois.edu');
       ga('send', 'pageview');
       
       

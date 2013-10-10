@@ -13,5 +13,5 @@ notification :growl
 
 guard 'haml' do
   #watch(%r{^app/views_haml/.+(\.html\.haml)$})
-  watch("index.html.haml")
+  watch("app/index.html.haml")
 end
